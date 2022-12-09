@@ -9,7 +9,16 @@ import cartIcon from "../../assets/cart.svg"
 function Header(props) {
 
     const { goToCartScreen,
-        goToProductsScreen, } = props
+        goToProductsScreen,
+        itemsInCart, 
+        buscaNome,
+
+    } = props
+
+
+        const onChangeNome = (e) => {
+            props.setBuscaNome(e.target.value);
+          };
 
     return (
       <HeaderContainer>
@@ -17,7 +26,13 @@ function Header(props) {
         <img src={spaceShip} alt="icon spaceship"/>
        </div>
        <div className="search">
-            <input placeholder="Busque seu planeta"/>
+            <input 
+            placeholder="Busque seu planeta" 
+            type="text" 
+            value={buscaNome}
+            onChange={onChangeNome}
+
+            />
             <button>
                 <img src={searchIcon} alt="Search icon" />
             </button>
@@ -27,8 +42,9 @@ function Header(props) {
             <img src={productsIcon} alt="products icon"/>
         </button>
 
-        <button onClick={goToCartScreen}>
+        <button onClick={goToCartScreen} className="cart-button">
             <img src={cartIcon} alt="cart icon"/>
+            <span className="cart-badge">{itemsInCart}</span>
         </button>
        </div>
        

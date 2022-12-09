@@ -1,4 +1,5 @@
-<h1 align="center"> Viagens espaciais </h1>
+Ammal-Raissa-Baeta
+<h1 align="center"> Viagens espaciais 🚀 </h1>
 
 <p align="center">
 E-commerce de viagens espaciais
@@ -15,6 +16,10 @@ https://viagemparamarte.surge.sh/</p>
 </p>
 
 <br>
+
+<p align="center">
+  <img alt="viagens espaciais produtos" src="projeto-frontendreact/src/assets/viagens.png" width="100%">
+</p>
 
 ## 🚀 Tecnologias
 
